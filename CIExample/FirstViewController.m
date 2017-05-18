@@ -24,4 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnCrash_Pressed:(id)sender {
+    int *x = NULL;
+    *x = 42;
+}
+
 @end

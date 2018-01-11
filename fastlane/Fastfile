@@ -31,7 +31,8 @@ platform :ios do
   lane :development do
     # match(type: "appstore") # more information: https://codesigning.guide
     gym(
-    export_method: "development"
+      scheme: "CIExample",
+      export_method: "development"
     )# Build your app - more options available
     #pilot
 
@@ -44,7 +45,8 @@ platform :ios do
     # match(type: "appstore")
     # snapshot
     gym(
-    export_method: "ad-hoc"
+      scheme: "CIExample",
+      export_method: "ad-hoc"
     )# Build your app - more options available
     #deliver(force: true)
     # frameit
@@ -55,6 +57,7 @@ platform :ios do
     # match(type: "appstore")
     # snapshot
     gym(
+      scheme: "CIExample",
       export_method: "app-store"
     )# Build your app - more options available
     #deliver(force: true)

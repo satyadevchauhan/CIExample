@@ -16,8 +16,6 @@
 		26657BDD1D09498F0049B89A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26657BDB1D09498F0049B89A /* LaunchScreen.storyboard */; };
 		26657BE81D09498F0049B89A /* CIExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26657BE71D09498F0049B89A /* CIExampleTests.m */; };
 		26657BF31D09498F0049B89A /* CIExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26657BF21D09498F0049B89A /* CIExampleUITests.m */; };
-		269A58461ECC4DED001B4EB3 /* HockeySDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269A58441ECC4DED001B4EB3 /* HockeySDK.framework */; };
-		269A58471ECC4DED001B4EB3 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 269A58451ECC4DED001B4EB3 /* HockeySDKResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +54,6 @@
 		26657BEE1D09498F0049B89A /* CIExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CIExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26657BF21D09498F0049B89A /* CIExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CIExampleUITests.m; sourceTree = "<group>"; };
 		26657BF41D09498F0049B89A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		269A58441ECC4DED001B4EB3 /* HockeySDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HockeySDK.framework; sourceTree = "<group>"; };
-		269A58451ECC4DED001B4EB3 /* HockeySDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HockeySDKResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				269A58461ECC4DED001B4EB3 /* HockeySDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +88,6 @@
 				26657BE61D09498F0049B89A /* CIExampleTests */,
 				26657BF11D09498F0049B89A /* CIExampleUITests */,
 				26657BC81D09498F0049B89A /* Products */,
-				269A58431ECC4DED001B4EB3 /* HockeySDK.embeddedframework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,16 +143,6 @@
 				26657BF41D09498F0049B89A /* Info.plist */,
 			);
 			path = CIExampleUITests;
-			sourceTree = "<group>";
-		};
-		269A58431ECC4DED001B4EB3 /* HockeySDK.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				269A58441ECC4DED001B4EB3 /* HockeySDK.framework */,
-				269A58451ECC4DED001B4EB3 /* HockeySDKResources.bundle */,
-			);
-			name = HockeySDK.embeddedframework;
-			path = "HockeySDK-iOS/HockeySDK.embeddedframework";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +213,7 @@
 				TargetAttributes = {
 					26657BC61D09498F0049B89A = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = B9VKZL3JJ3;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = FQUA6H7S5U;
 					};
 					26657BE21D09498F0049B89A = {
 						CreatedOnToolsVersion = 7.1;
@@ -247,6 +230,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -268,7 +252,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26657BDD1D09498F0049B89A /* LaunchScreen.storyboard in Resources */,
-				269A58471ECC4DED001B4EB3 /* HockeySDKResources.bundle in Resources */,
 				26657BDA1D09498F0049B89A /* Assets.xcassets in Resources */,
 				26657BD81D09498F0049B89A /* Main.storyboard in Resources */,
 			);
@@ -457,19 +440,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_TEAM = B9VKZL3JJ3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
-				);
+				DEVELOPMENT_TEAM = FQUA6H7S5U;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CIExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saba.CIExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyadev.CIExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58f76f52-9122-4228-a2a6-3afba918be63";
-				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -478,19 +459,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
-				DEVELOPMENT_TEAM = B9VKZL3JJ3;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/HockeySDK-iOS/HockeySDK.embeddedframework",
-				);
+				DEVELOPMENT_TEAM = FQUA6H7S5U;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = CIExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.saba.CIExample;
+				PRODUCT_BUNDLE_IDENTIFIER = com.satyadev.CIExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "58f76f52-9122-4228-a2a6-3afba918be63";
-				PROVISIONING_PROFILE_SPECIFIER = "XC Ad Hoc: *";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -512,11 +492,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CIExampleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.saba.CIExampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "fcf2dafc-4060-4be3-8fb2-d2d2d09d8f26";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CIExample.app/CIExample";
 			};
 			name = Release;
